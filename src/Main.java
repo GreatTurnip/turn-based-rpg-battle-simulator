@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Character hero = new Warrior("Arthur");
-        Character enemy = new Mage("Marlin");
-        Battle battle = new Battle();
-        battle.start(hero, enemy);
+        Character warrior = new Warrior("Arthur");
+        Character mage = new Mage("Marlin");
+        Character archer = new Archer("legolas");
+        warrior.attack(mage);
+        mage.attack(archer);
+        archer.attack(warrior);
     }
 }

@@ -33,6 +33,11 @@ public class Character {
             health = 0;
     }
 
+    public int getAttackDamage()
+    {
+        return attackDamage;
+    }
+
     public boolean isAlive()
     {
         return health > 0;
